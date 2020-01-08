@@ -11,7 +11,10 @@ async function words (num) {
       }
       arr.push(word);  
     }
-  const results = await pool.query(`EXPLAIN ANALYZE SELECT * FROM "words" WHERE "word" = ANY($1::varchar(50)[]);`, [arr]).catch(err=>{return err})
+  const results = await pool.query(
+    `EXPLAIN ANALYZE SELECT * FROM "words" WHERE "word" = ANY($1::varchar(50)[]);`,
+    [arr]
+  ).catch(err=>{return err})
   return results.rows[0];
 }
 
