@@ -1,0 +1,18 @@
+{
+  "name": "spikes",
+  "version": "1.0.0",
+  "description": "These are spikes to test portions of my solo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./querry/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.17.0"
+  }
+}
